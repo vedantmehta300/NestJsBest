@@ -1,0 +1,18 @@
+[
+  {
+    "type": "mysql",
+    "host": "unitydb.cdpnlocuxdmk.eu-west-3.rds.amazonaws.com", 
+    "port": 3306,
+    "username": "admin", 
+    "password": "1234567I",
+    "database": "dbForNest",
+    "logging": true,
+    "synchronize": false,
+    "entities": [
+        "src/models/**/*.entity{.ts, js}"
+    ],
+    "migrations": ["migrations/*{.ts,.js}"],
+    "migrationsTableName": "migrations_typeorm",
+    "migrationsRun": true
+  }
+]
